@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation Agency Template</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <h2>Contents</h2>
+            <ul class="menu">
+                <li onclick="showContent('introduction')">Introduction</li>
+                <li onclick="showContent('packages')">Packages</li>
+                <li onclick="showContent('navbar')">Navbar</li>
+                <li onclick="showContent('banner')">Banner</li>
+                <li onclick="showContent('services')">Services</li>
+                <li onclick="showContent('portfolio')">Portfolio</li>
+                <li onclick="showContent('contact')">Contact</li>
+            </ul>
+        </aside>
+
+        <!-- Hamburger Button -->
+        <button class="hamburger" onclick="toggleSidebar()">☰</button>
+
+        <!-- Main Content -->
+        <main class="content">
+            <div id="dynamic-content">
+                <h2>Welcome!</h2>
+                <p>Select a section from the sidebar to view details.</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
